@@ -10,6 +10,7 @@ module.exports = {
   theme: {
 	colors: {
 		'naranja': '#fc671a',
+		'azul': '#02b4c8',
 	},
     extend: {
       fontFamily: {
