@@ -11,6 +11,7 @@ module.exports = {
 	colors: {
 		'naranja': '#fc671a',
 		'azul': '#02b4c8',
+		'blanco': '#FFFFFF',
 	},
     extend: {
       fontFamily: {
