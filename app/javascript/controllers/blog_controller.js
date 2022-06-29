@@ -1,4 +1,11 @@
-$(function () {
+import { Controller } from "@hotwired/stimulu"
+
+export default class extends Controller {
+  connect() {
+    
+	// Code Blog JS
+	
+	$(function () {
             var mediumPromise = new Promise(function (resolve) {
             var $content = $('#jsonContent');
             var data = {
@@ -63,3 +70,7 @@ mediumPromise.then(function()
                 });
             });
         });
+
+	  //Finish
+  }
+}

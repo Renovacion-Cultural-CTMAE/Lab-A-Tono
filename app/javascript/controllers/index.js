@@ -12,8 +12,7 @@ eagerLoadControllersFrom("controllers", application)
 //
 
 // EMBED BLOG MEDIUM JS
-
-$(function () {
+ $(function () {
             var mediumPromise = new Promise(function (resolve) {
             var $content = $('#jsonContent');
             var data = {
