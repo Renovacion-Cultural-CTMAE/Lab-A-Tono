@@ -1,0 +1,2 @@
+module InspiringsHelper
+end

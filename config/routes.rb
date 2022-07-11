@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :inspirings
   devise_for :users
   root 'home#index'
   get 'sobrenosotros/index'
