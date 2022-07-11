@@ -17,6 +17,25 @@
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
 
+  <div class="mb-3">
+      <div class="field">
+        <%= f.radio_button :inspiring, "Inspirador" %>
+        <%= f.label :Soy_un_instructor %>
+      </div>
+    </div>
+  <div class="mb-3">
+    <div class="field">
+      <%= f.radio_button :relational, "Relacional" %>
+      <%= f.label :Soy_un_administrativo %>
+    </div>
+  </div>
+  <div class="mb-3">
+    <div class="field">
+      <%= f.radio_button :transformational, "Transformacional" %>
+      <%= f.label :Soy_un_estudiante %>
+    </div>
+  </div>
+
   <div class="field mb-6">
     <%= f.label :Confirma_tu_contraseña %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
