@@ -1,0 +1,17 @@
+<div id="<%= dom_id inspiring %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Answers:</strong>
+    <%= inspiring.answers %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">User:</strong>
+    <%= inspiring.user_id %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this inspiring", inspiring, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this inspiring', edit_inspiring_path(inspiring), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
