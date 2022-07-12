@@ -1,5 +1,6 @@
 class InspiringsController < ApplicationController
   before_action :set_inspiring, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /inspirings or /inspirings.json
   def index
@@ -22,6 +23,7 @@ class InspiringsController < ApplicationController
   # POST /inspirings or /inspirings.json
   def create
     @inspiring = Inspiring.new(inspiring_params)
+    @inspiring.user = current_user
 
     respond_to do |format|
       if @inspiring.save
@@ -65,6 +67,6 @@ class InspiringsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def inspiring_params
-      params.require(:inspiring).permit(:answers, :user_id)
+      params.require(:inspiring).permit(:user_id, :answers => [])
     end
 end
