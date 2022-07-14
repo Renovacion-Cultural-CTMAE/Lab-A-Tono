@@ -67,6 +67,6 @@ class InspiringsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def inspiring_params
-      params.require(:inspiring).permit(:user_id, :answers => [])
+      params.require(:inspiring).permit(:user_id, :answers, :answers2, :answers3, :answers4, :answers5, :answers6, :answers7, :answers8, :answers9)
     end
 end

@@ -10,12 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_11_132016) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_14_141354) do
   create_table "inspirings", force: :cascade do |t|
     t.integer "answers"
     t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "answers2"
+    t.integer "answers3"
+    t.integer "answers4"
+    t.integer "answers5"
+    t.integer "answers6"
+    t.integer "answers7"
+    t.integer "answers8"
+    t.integer "answers9"
+    t.integer "answers10"
     t.index ["user_id"], name: "index_inspirings_on_user_id"
   end
 
