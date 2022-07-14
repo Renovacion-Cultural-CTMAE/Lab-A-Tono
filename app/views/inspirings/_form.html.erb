@@ -15,7 +15,7 @@
     <%= form.label :"Mis funciones en el SENA siento que son fuente de satisfacción, siento pasión por lo que hago, dónde lo hago y cómo lo hago." %><br>
     <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
     <div class="flex flex-col space-y-2 p-2 w-100">
-      <%= form.range_field :answers, multiple: true, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <%= form.range_field :answers, in: 1..5, class: 'form-range mt-4 w-full' %>
       <ul class="flex justify-between w-full px-[10px]"> 
         <li class="flex justify-center relative"><span class="absolute">Nunca</li>
         <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
@@ -30,7 +30,7 @@
     <%= form.label :"La ejecución de mis funciones en el SENA me representa satisfacción personal." %><br>
     <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
     <div class="flex flex-col space-y-2 p-2 w-100">
-      <%= form.range_field :answers, multiple: true, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <%= form.range_field :answers2, in: 1..5, class: 'form-range mt-4 w-full' %>
       <ul class="flex justify-between w-full px-[10px]"> 
         <li class="flex justify-center relative"><span class="absolute">Nunca</li>
         <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
@@ -46,7 +46,7 @@
     <%= form.label :"En el desarrollo de mis funciones en el SENA me permito construir un vínculo auténtico y cercano con mis compañeros." %><br>
     <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
     <div class="flex flex-col space-y-2 p-2 w-100">
-      <%= form.range_field :answers, multiple: true, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <%= form.range_field :answers3, in: 1..5, class: 'form-range mt-4 w-full' %>
       <ul class="flex justify-between w-full px-[10px]"> 
         <li class="flex justify-center relative"><span class="absolute">Nunca</li>
         <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
@@ -61,7 +61,7 @@
     <%= form.label :"Considero que mis funciones en el SENA me ha permitido desarrollar mis talentos." %><br>
     <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
     <div class="flex flex-col space-y-2 p-2 w-100">
-      <%= form.range_field :answers, multiple: true, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <%= form.range_field :answers4, in: 1..5, class: 'form-range mt-4 w-full' %>
       <ul class="flex justify-between w-full px-[10px]"> 
         <li class="flex justify-center relative"><span class="absolute">Nunca</li>
         <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
@@ -77,7 +77,7 @@
     <%= form.label :"Considero que estoy comprometido con los procesos de cambio y transformación que vive la entidad." %><br>
     <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
     <div class="flex flex-col space-y-2 p-2 w-100">
-      <%= form.range_field :answers, multiple: true, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <%= form.range_field :answers5, in: 1..5, class: 'form-range mt-4 w-full' %>
       <ul class="flex justify-between w-full px-[10px]"> 
         <li class="flex justify-center relative"><span class="absolute">Nunca</li>
         <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
@@ -92,7 +92,7 @@
     <%= form.label :"En el relacionamiento con las diferentes personas en la entidad soy empático." %><br>
     <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
     <div class="flex flex-col space-y-2 p-2 w-100">
-      <%= form.range_field :answers, multiple: true, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <%= form.range_field :answers6, in: 1..5, class: 'form-range mt-4 w-full' %>
       <ul class="flex justify-between w-full px-[10px]"> 
         <li class="flex justify-center relative"><span class="absolute">Nunca</li>
         <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
@@ -107,7 +107,7 @@
     <%= form.label :"Me perciben como una persona con iniciativa para realizar mis funciones con un enfoque innovador." %><br>
     <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
     <div class="flex flex-col space-y-2 p-2 w-100">
-      <%= form.range_field :answers, multiple: true, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <%= form.range_field :answers7, in: 1..5, class: 'form-range mt-4 w-full' %>
       <ul class="flex justify-between w-full px-[10px]"> 
         <li class="flex justify-center relative"><span class="absolute">Nunca</li>
         <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
@@ -122,7 +122,7 @@
     <%= form.label :"Soy una persona que comprendo mis emociones, se cómo usarlas y controlarlas en el cumplimiento de las funciones en el SENA." %><br>
     <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
     <div class="flex flex-col space-y-2 p-2 w-100">
-      <%= form.range_field :answers, multiple: true, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <%= form.range_field :answers8, in: 1..5, class: 'form-range mt-4 w-full' %>
       <ul class="flex justify-between w-full px-[10px]"> 
         <li class="flex justify-center relative"><span class="absolute">Nunca</li>
         <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
@@ -137,7 +137,7 @@
     <%= form.label :"Motivo constantemente a quienes me rodean en su proceso en la entidad, les recuerdo lo valiosos que son y su potencial personal." %><br>
     <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
     <div class="flex flex-col space-y-2 p-2 w-100">
-      <%= form.range_field :answers, multiple: true, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <%= form.range_field :answers9, in: 1..5, class: 'form-range mt-4 w-full' %>
       <ul class="flex justify-between w-full px-[10px]"> 
         <li class="flex justify-center relative"><span class="absolute">Nunca</li>
         <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
