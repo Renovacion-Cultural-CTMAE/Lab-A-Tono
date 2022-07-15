@@ -148,6 +148,21 @@
   </div>
 </div>
 
+<div class="py-10">
+  <%= form.label :"Tengo un profundo sentido de compromiso con la misión del SENA, la cual trasmito y contagio a mi equipo de trabajo." %><br>
+  <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
+  <div class="flex flex-col space-y-2 p-2 w-100">
+    <%= form.range_field :answers10, in: 1..5, class: 'form-range mt-4 w-full' %>
+    <ul class="flex justify-between w-full px-[10px]">
+      <li class="flex justify-center relative"><span class="absolute">Nunca</li>
+      <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
+      <li class="flex justify-center relative"><span class="absolute">Algunas Veces</li>
+      <li class="flex justify-center relative"><span class="absolute">Casi Siempre</li>
+      <li class="flex justify-center relative"><span class="absolute">Siempre</li>
+    </ul>
+  </div>
+</div>
+
 <div class="inline py-5">
   <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
 </div>
