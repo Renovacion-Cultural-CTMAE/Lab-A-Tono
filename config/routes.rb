@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :transformationals
+  resources :relationals
   resources :inspirings
   devise_for :users
   root 'home#index'

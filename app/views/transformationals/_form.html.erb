@@ -1,0 +1,172 @@
+<%= form_with(model: transformational, class: "contents") do |form| %>
+  <% if transformational.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(transformational.errors.count, "error") %> prohibited this transformational from being saved:</h2>
+
+      <ul>
+        <% transformational.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="py-10">
+    <%= form.label :"Comparto con los miembros de mi equipo de trabajo la visión de la entidad." %><br>
+    <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
+    <div class="flex flex-col space-y-2 p-2 w-100">
+      <%= form.range_field :answers, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <ul class="flex justify-between w-full px-[10px]"> 
+        <li class="flex justify-center relative"><span class="absolute">Nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Algunas Veces</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi Siempre</li>
+        <li class="flex justify-center relative"><span class="absolute">Siempre</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="py-10">
+    <%= form.label :"Incentivo el crecimiento personal y valoro los talentos de mi equipo de trabajo." %><br>
+    <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
+    <div class="flex flex-col space-y-2 p-2 w-100">
+      <%= form.range_field :answers2, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <ul class="flex justify-between w-full px-[10px]"> 
+        <li class="flex justify-center relative"><span class="absolute">Nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Algunas Veces</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi Siempre</li>
+        <li class="flex justify-center relative"><span class="absolute">Siempre</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="py-10">
+    <%= form.label :"Poseo la capacidad de trabajar de manera articulada y coordinada con otras personas para el cumplimiento de los objetivos institucionales." %><br>
+    <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
+    <div class="flex flex-col space-y-2 p-2 w-100">
+      <%= form.range_field :answers3, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <ul class="flex justify-between w-full px-[10px]"> 
+        <li class="flex justify-center relative"><span class="absolute">Nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Algunas Veces</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi Siempre</li>
+        <li class="flex justify-center relative"><span class="absolute">Siempre</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="py-10">
+    <%= form.label :"Poseo la capacidad para comprender y apreciar diferentes visiones de mis compañeros de trabajo." %><br>
+    <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
+    <div class="flex flex-col space-y-2 p-2 w-100">
+      <%= form.range_field :answers4, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <ul class="flex justify-between w-full px-[10px]"> 
+        <li class="flex justify-center relative"><span class="absolute">Nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Algunas Veces</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi Siempre</li>
+        <li class="flex justify-center relative"><span class="absolute">Siempre</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="py-10">
+    <%= form.label :"Me comunico con mi equipo de trabajo de forma clara y asertiva para facilitar las dinámicas de trabajo y el logro de metas institucionales." %><br>
+    <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
+    <div class="flex flex-col space-y-2 p-2 w-100">
+      <%= form.range_field :answers5, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <ul class="flex justify-between w-full px-[10px]"> 
+        <li class="flex justify-center relative"><span class="absolute">Nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Algunas Veces</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi Siempre</li>
+        <li class="flex justify-center relative"><span class="absolute">Siempre</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="py-10">
+    <%= form.label :"Guio, direcciono y emprendo tareas o proyectos para apoyar y acompañar a mi equipo de trabajo en el proceso de transformación del SENA." %><br>
+    <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
+    <div class="flex flex-col space-y-2 p-2 w-100">
+      <%= form.range_field :answers6, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <ul class="flex justify-between w-full px-[10px]"> 
+        <li class="flex justify-center relative"><span class="absolute">Nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Algunas Veces</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi Siempre</li>
+        <li class="flex justify-center relative"><span class="absolute">Siempre</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="py-10">
+    <%= form.label :"Pienso en ideas innovadoras para el crecimiento del centro de formación y busco estrategias para ser aplicadas." %><br>
+    <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
+    <div class="flex flex-col space-y-2 p-2 w-100">
+      <%= form.range_field :answers7, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <ul class="flex justify-between w-full px-[10px]"> 
+        <li class="flex justify-center relative"><span class="absolute">Nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Algunas Veces</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi Siempre</li>
+        <li class="flex justify-center relative"><span class="absolute">Siempre</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="py-10">
+    <%= form.label :"Represento los valores institucionales en mis comportamientos y decisiones, actuando con coherencia, integridad y legalidad." %><br>
+    <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
+    <div class="flex flex-col space-y-2 p-2 w-100">
+      <%= form.range_field :answers8, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <ul class="flex justify-between w-full px-[10px]"> 
+        <li class="flex justify-center relative"><span class="absolute">Nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Algunas Veces</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi Siempre</li>
+        <li class="flex justify-center relative"><span class="absolute">Siempre</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="py-10">
+    <%= form.label :"Me anticipo y actúo con dinamismo frente a situaciones inesperadas en el cumplimiento de mis funciones." %><br>
+    <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
+    <div class="flex flex-col space-y-2 p-2 w-100">
+      <%= form.range_field :answers9, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <ul class="flex justify-between w-full px-[10px]"> 
+        <li class="flex justify-center relative"><span class="absolute">Nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Algunas Veces</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi Siempre</li>
+        <li class="flex justify-center relative"><span class="absolute">Siempre</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="py-10">
+    <%= form.label :"Promuevo la apropiación y vivencia de la Renovación Cultural y la Transformación Digital en la entidad." %><br>
+    <%=form.label :"Selecciona tu respuesta", class: 'mt-4' %>
+    <div class="flex flex-col space-y-2 p-2 w-100">
+      <%= form.range_field :answers10, in: 1..5, class: 'form-range mt-4 w-full' %>
+      <ul class="flex justify-between w-full px-[10px]"> 
+        <li class="flex justify-center relative"><span class="absolute">Nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi nunca</li>
+        <li class="flex justify-center relative"><span class="absolute">Algunas Veces</li>
+        <li class="flex justify-center relative"><span class="absolute">Casi Siempre</li>
+        <li class="flex justify-center relative"><span class="absolute">Siempre</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="inline">
+    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>

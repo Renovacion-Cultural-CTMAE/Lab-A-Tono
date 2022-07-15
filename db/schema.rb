@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_14_141354) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_14_160501) do
   create_table "inspirings", force: :cascade do |t|
     t.integer "answers"
     t.integer "user_id", null: false
@@ -26,6 +26,40 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_14_141354) do
     t.integer "answers9"
     t.integer "answers10"
     t.index ["user_id"], name: "index_inspirings_on_user_id"
+  end
+
+  create_table "relationals", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "answers"
+    t.integer "answers2"
+    t.integer "answers3"
+    t.integer "answers4"
+    t.integer "answers5"
+    t.integer "answers6"
+    t.integer "answers7"
+    t.integer "answers8"
+    t.integer "answers9"
+    t.integer "answers10"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_relationals_on_user_id"
+  end
+
+  create_table "transformationals", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "answers"
+    t.integer "answers2"
+    t.integer "answers3"
+    t.integer "answers4"
+    t.integer "answers5"
+    t.integer "answers6"
+    t.integer "answers7"
+    t.integer "answers8"
+    t.integer "answers9"
+    t.integer "answers10"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_transformationals_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -44,4 +78,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_14_141354) do
   end
 
   add_foreign_key "inspirings", "users"
+  add_foreign_key "relationals", "users"
+  add_foreign_key "transformationals", "users"
 end

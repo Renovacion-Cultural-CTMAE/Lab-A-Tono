@@ -1,0 +1,62 @@
+<div id="<%= dom_id transformational %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">User:</strong>
+    <%= transformational.user_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Answers:</strong>
+    <%= transformational.answers %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Answers2:</strong>
+    <%= transformational.answers2 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Answers3:</strong>
+    <%= transformational.answers3 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Answers4:</strong>
+    <%= transformational.answers4 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Answers5:</strong>
+    <%= transformational.answers5 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Answers6:</strong>
+    <%= transformational.answers6 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Answers7:</strong>
+    <%= transformational.answers7 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Answers8:</strong>
+    <%= transformational.answers8 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Answers9:</strong>
+    <%= transformational.answers9 %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Answers10:</strong>
+    <%= transformational.answers10 %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this transformational", transformational, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this transformational', edit_transformational_path(transformational), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
