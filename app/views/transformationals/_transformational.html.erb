@@ -1,3 +1,4 @@
+<div class="container mx-auto md:w-2/3"
 <div id="<%= dom_id transformational %>">
     <p class="my-5">
         <strong class="block font-medium mb-1">User:</strong>
@@ -166,8 +167,9 @@
     </div> 
 
     <% if action_name != "show" %>
-    <%= link_to "Show this transformational", transformational, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to 'Edit this transformational', edit_transformational_path(transformational), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Mostrar tus respuestas", transformational, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Editar tus respuestas', edit_transformational_path(transformational), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
     <hr class="mt-6">
     <% end %>
+</div>
 </div>
